@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -251,6 +250,7 @@
 
 .desc {
   font-size: 14px;
+  font-weight: bold;
 }
 
 /* Responsivo */
@@ -393,7 +393,7 @@ button {
             <a href="#timeline">Timeline</a>
             <a href="#avaliacoes-livro">Assessment</a>
             <a href="#quiz">Quiz</a>
-            <a href="#participantes"> participants</a>
+            <a href="#participantes"> Participants</a>
             
       <button class="btn" onclick="toggleTheme()">
         Toggle Theme</button>
@@ -418,15 +418,15 @@ button {
   <main>
     
     
-    <h2>Welcome The story of the internet</h2>
-    <img class="highlight-image" src="The_Story_of_the_Internet-Stephen_Bryant.jpg" alt="Imagem destaque">
+    <h2> The Story of the Internet</h2>
+    <img src="The_Story_of_the_Internet-Stephen_Bryant.jpg" alt="Imagem destaque">
     
     <p>The Story of the Internet" explores how the internet was born, how it evolved, and how it reshaped the world. It highlights key moments—from the early days of ARPANET to the rise of the modern web—featuring the inventors, companies, and breakthroughs that made it all possible.</p>
     
     
     <div class="amazon">
         <a href="https://www.amazon.com.br/Story-Internet-English-KATRINA-HENRY-ebook/dp/B09YNDJS44/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2XH5DG8RU3V52&dib=eyJ2IjoiMSJ9.DBjIaqOfBTBVmMQCeBHTOQSY9xH6kTq3ovMGPopft7iksk2hLToYo1-6kO0G_FHLvEhLP4ShBwwrA5e659e-lAR-gKic2cfOPc6lEfFHKr-PV6F5PDW6zYQg5BIW0GBEkKOtA1QywS6Q_JsEQmKlfouHGbp4pcJ56CKnDItuuYPiEiyw6d4qWVJ4WxVRwjact2dd8ojd1LUPUr5mYCXqfUVdfbdyDQl5_A--CLgGHzbVkuzjSF2QLqUr0e-rhMcDe0BGLZIGyjIe1zQZFxI3EZmAAULZaYkrXYqRMoIwmpA.UVYu7Ea9XRJmPmNak4Asq-k__J980sLi2_XsYaDB39E&dib_tag=se&keywords=The+Story+of+the+Internet&qid=1744217253&sprefix=%2Caps%2C958&sr=8-2">
-            <button class="btn" onclick="">buy the book</button>
+            <button class="btn" onclick="">Buy the book</button>
         </a>
     </div>
 
@@ -442,15 +442,19 @@ button {
               <div class="timeline-icon"><i class="fas fa-satellite"></i></div>
               <div class="timeline-content">
                 <p class="year">1957</p>
-                <p class="desc">USSR launches Sputnik. USA creates ARPA..</p>
+                <p class="desc">Launch of Sputnik by the Soviet Union </p>
+                <p class="desc">The Soviet satellite inspires the US to create ARPA (Advanced Research Projects Agency), focused on military and scientific technology.
+
               </div>
             </div>
       
-            <div class="timeline-event">
-              <div class="timeline-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="timeline-event" onclick="Image ('sputink.jpg')">
+              <div class="timeline-icon"> 
+                <i class="fas fa-project-diagram"></i></div>
               <div class="timeline-content">
                 <p class="year">1960s</p>
-                <p class="desc">Development of ARPANET and data packets..</p>
+                <p class="desc">Development of ARPANET</p>
+                <p class="desc">Funded by ARPA, this network connects computers at academic and military institutions.</p>
               </div>
             </div>
       
@@ -458,7 +462,8 @@ button {
               <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
               <div class="timeline-content">
                 <p class="year">1969</p>
-                <p class="desc">First ARPANET connection between universities..</p>
+                <p class="desc">First ARPANET connection</p>
+                <p class="desc">The first computer network, connecting four universities in the US and marking the beginning of the internet.</p>
               </div>
             </div>
       
@@ -466,7 +471,8 @@ button {
               <div class="timeline-icon"><i class="fas fa-envelope"></i></div>
               <div class="timeline-content">
                 <p class="year">1972</p>
-                <p class="desc">Creating an email and using "@".</p>
+                <p class="desc">Creating the email and using "@"</p>
+                <p class="desc">The “@” symbol is now used to identify users and domains.</p>
               </div>
             </div>
       
@@ -474,7 +480,9 @@ button {
               <div class="timeline-icon"><i class="fas fa-network-wired"></i></div>
               <div class="timeline-content">
                 <p class="year">1983</p>
-                <p class="desc">TCP/IP and the term "Internet" emerge.</p>
+                <p class="desc">  <p class="desc">TCP/IP and the term "Internet" emerge.</p>
+                <p class="desc">All ARPANET networks migrate to TCP/IP, the basis of the modern Internet.
+                    The term “Internet” emerges to designate the interconnection of networks.</p>
               </div>
             </div>
       
@@ -482,7 +490,8 @@ button {
               <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div>
               <div class="timeline-content">
                 <p class="year">1989</p>
-                <p class="desc">Tim Berners-Lee proposes the WWW..</p>
+                <p class="desc">A system for organizing, accessing and sharing information on the Internet through hypertext, giving rise to the web.</p>
+                
               </div>
             </div>
       
@@ -491,6 +500,7 @@ button {
               <div class="timeline-content">
                 <p class="year">1993</p>
                 <p class="desc"> Mosaic browser released.</p>
+                <p class="desc"> Created by Marc Andreessen and his team at NCSA. User-friendly interface and popular image support turn the internet into an accessible tool.</p>
               </div>
             </div>
       
@@ -499,6 +509,7 @@ button {
               <div class="timeline-content">
                 <p class="year">1994–95</p>
                 <p class="desc">Yahoo! and Amazon emerge. The beginning of e-commerce.</p>
+                <p class="desc">Large sites and companies such as Yahoo! and Amazon emerge. The era of ecommerce begins.</p>
               </div>
             </div>
       
@@ -507,6 +518,8 @@ button {
               <div class="timeline-content">
                 <p class="year">2000s</p>
                 <p class="desc">Internet in everyday life. Facebook  (2004).</p>
+                <p class="desc"><p class="desc">Internet in everyday life. Facebook  (2004).</p>
+
                 
 
                 
@@ -523,7 +536,7 @@ button {
   <section id="assessment" style="margin-top: 200px;">
     <div class="tabs">
         <button class="btn" onclick="showTab('timeline')">🕒 Timeline</button>
-        <button class="btn" onclick="showTab('avaliacoes')">📚 assessment</button>
+        <button class="btn" onclick="showTab('avaliacoes')">📚 Assessment</button>
       </div>
       
       <div id="timeline" class="tab-content" style="display: block;">
@@ -570,7 +583,7 @@ button {
   </section>
   
     <div id="participantes" class="tab-content" style="display: none;"></div>
-    <h2 class="participants-title">Participantes do Trabalho</h2>
+    <h2 class="participants-title">Participants</h2>
     <div class="participants-container">
       <div class="participant fade-in">
         <img src="image_300px_2.jpg" alt="caio" />
@@ -682,33 +695,51 @@ button {
   }
 
   const perguntas = [
-    {
-      pergunta: "In what year was the  Sputnik satellite  launched?",
-      opcoes: ["1955", "1957", "1961", "1969"],
-      resposta: "1957"
-    },
-    {
-      pergunta: "Who proposed the World Wide Web (WWW)?",
-      opcoes: ["Bill Gates", "Tim Berners-Lee", "Alan Turing", "Mark Zuckerberg"],
-      resposta: "Tim Berners-Lee"
-    },
-    {
-      pergunta: "What is the base protocol of the Internet?",
-      opcoes: ["HTTP", "FTP", "TCP/IP", "SMTP"],
-      resposta: "TCP/IP"
-    }
-  ];
+  {
+    pergunta: "In what year was the Sputnik satellite launched?",
+    imagem: "imagem do satelite.jpg",
+    opcoes: ["1955", "1957", "1961", "1969"],
+    resposta: "1957"
+  },
+  {
+    pergunta: "Who proposed the World Wide Web (WWW)?",
+    imagem: "cara da net.jpg",
+    opcoes: ["Bill Gates", "Tim Berners-Lee", "Alan Turing", "Mark Zuckerberg"],
+    resposta: "Tim Berners-Lee"
+  },
+  {
+    pergunta: "What is the base protocol of the Internet?",
+    imagem: "klk.png",
+    opcoes: ["HTTP", "FTP", "TCP/IP", "SMTP"],
+    resposta: "TCP/IP"
+  },
+  {
+    pergunta: "In which decade did the first form of communication emerge that gave rise to the modern internet?",
+    imagem: "aaaa.webp",
+    opcoes: ["1950", "1960", "1970", "1980"],
+    resposta: "1960"
+  },
+  {
+    pergunta: "What was the main objective of creating ARPANET, the precursor to the internet?",
+    imagem: "sipa3.webp",
+    opcoes: ["Create a social network", "Facilitate e-commerce", "Share information between research centers", "Transmit television signals"],
+    resposta: "Share information between research centers"
+  }
+];
 
   const container = document.getElementById("quiz-container");
 
   perguntas.forEach((q, i) => {
-    const div = document.createElement("div");
-    div.className = "pergunta";
-    div.innerHTML = `<h3>${q.pergunta}</h3>` + q.opcoes.map((op, j) =>
-      `<label><input type="radio" name="pergunta${i}" value="${op}">${op}</label><br>`
-    ).join("");
-    container.appendChild(div);
-  });
+  const div = document.createElement("div");
+  div.className = "pergunta";
+  div.innerHTML = `
+    <h3>${q.pergunta}</h3>
+    <img src="${q.imagem}" alt="Imagem da pergunta" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+    ` + q.opcoes.map((op, j) =>
+    `<label><input type="radio" name="pergunta${i}" value="${op}"> ${op}</label><br>`
+  ).join("");
+  container.appendChild(div);
+});
 
   function verificarRespostas() {
     let acertos = 0;
